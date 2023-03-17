@@ -21,7 +21,7 @@ function App() {
           </div>
         ) : (
         <div className='questions'>
-        <h2>Questions 4 out of 5</h2>
+        <h2>Questions {currentQuestion + 1} out of </h2>
 
         <h3 className='questionTxt'>How many Harry Potter books are there?</h3>
         <ul>
