@@ -6,6 +6,12 @@ function App() {
   const [showFinalResults, setFinalResults] = useState(false);
   const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const optionClicked = (isCorrect) => {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+    setCurrentQuestion(currentQuestion +1);
+  }
 
   const questions = [
     {
@@ -72,11 +78,11 @@ function App() {
         <div className='questions'>
         <h2>Questions {currentQuestion + 1} out of {questions.length}</h2>
 
-        <h3 className='questionTxt'>How many Harry Potter books are there?</h3>
+        <h3 className='questionTxt'>{questions[currentQuestion].text}</h3>
         <ul>
           {questions[currentQuestion].options.map((option) => {
           return(
-            <li>{option.text}</li>
+            <li onClick={() => optionClicked(option.isCorrect)} key={option.id}>{option.text}</li>
           );
         })}
         </ul>
