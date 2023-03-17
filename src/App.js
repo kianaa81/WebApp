@@ -8,7 +8,7 @@ function App() {
       <div className='questions'>
         <h2>Questions 4 out of 5</h2>
 
-        <h3>How many Harry Potter books are there?</h3>
+        <h3 className='questionTxt'>How many Harry Potter books are there?</h3>
         <ul>
           <li>1 Book</li>
           <li>4 Books</li>
