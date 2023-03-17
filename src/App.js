@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Harry Potter Quiz</h1>
+      <h2>Current score: 4</h2>
+      <div>
+        <h2>Questions 4 out of 5</h2>
+
+        <h3>How many Harry Potter books are there?</h3>
+        <ul>
+          <li>1 Book</li>
+          <li>4 Books</li>
+          <li>6 Books</li>
+          <li>7 Books</li>
+        </ul>
+      </div>
+
     </div>
   );
 }
