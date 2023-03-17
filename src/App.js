@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <h1>Harry Potter Quiz</h1>
       <h2>Current score: 4</h2>
-      <div>
+      <div className='questions'>
         <h2>Questions 4 out of 5</h2>
 
         <h3>How many Harry Potter books are there?</h3>
