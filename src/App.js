@@ -17,6 +17,13 @@ function App() {
         </ul>
       </div>
 
+      <div className='results'>
+          <h1>Final Results</h1>
+          <h2>3 out of 5 correct</h2>
+
+          <button>Play Again</button>
+      </div>
+
     </div>
   );
 }
