@@ -74,10 +74,11 @@ function App() {
 
         <h3 className='questionTxt'>How many Harry Potter books are there?</h3>
         <ul>
-          <li>1 Book</li>
-          <li>4 Books</li>
-          <li>6 Books</li>
-          <li>7 Books</li>
+          {questions[currentQuestion].options.map((option) => {
+          return(
+            <li>{option.text}</li>
+          );
+        })}
         </ul>
       </div>
         ) }
