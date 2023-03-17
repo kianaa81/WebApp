@@ -4,11 +4,13 @@ import React, {useState} from 'react';
 function App() {
 
   const [showFinalResults, setFinalResults] = useState(false);
+  const [score, setScore] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
 
   return (
     <div className="App">
       <h1>Harry Potter Quiz</h1>
-      <h2>Current score: 4</h2>
+      <h2>Current score: {score}</h2>
 
       {showFinalResults ? (
               <div className='results'>
