@@ -74,13 +74,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Harry Potter Quiz</h1>
-      <h2>Current score: {score}</h2>
+      <h1 className='titleName'>Harry Potter Quiz</h1>
+      <h2 className='titleName'>Current score: {score}</h2>
 
       {showFinalResults ? (
               <div className='results'>
               <h1>Final Results</h1>
-              <h2>3 out of 5 correct</h2>
     
               <button onClick={() => playAgain()}>Play Again</button>
           </div>
